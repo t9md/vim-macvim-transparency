@@ -4,9 +4,9 @@ vim-macvim-transparency
 change MacVim's window transparency with shortcut
 
 |transparency| is provided for only MacVim which controll current GUI window's 
-transparency.  
-You can change transparency by 'let &transparency = VALUE'.  
-VALUE shoud be number from 0 - 100.  
+transparency. 
+You can change transparency by 'let &transparency = VALUE'. 
+VALUE shoud be number from 0 - 100. 
 
 This plugin helps you change transparency quickly.  
 
