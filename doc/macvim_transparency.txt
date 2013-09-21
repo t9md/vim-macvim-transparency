@@ -1,0 +1,69 @@
+macvim_transparency.txt Tranparency manupiration for MacVim
+
+Version: 1.0
+Author : t9md <taqumd@gmail.com>
+GitHub : https://github.com/t9md/vim-macvim-transparency
+==============================================================================
+CONTENTS					*macvim-transparency-contents*
+
+Introduction				    |macvim-transparency-introduction|
+Configuration Examples			    |macvim-transparency-examples|
+Changelog				    |macvim-transparency-changelog|
+
+==============================================================================
+INTRODUCTION				      	*macvim_transparency-introduction*
+
+|transparency| is provided for only MacVim which controll current GUI window's 
+transparency.
+You can change transparency by 'let &transparency = VALUE'.
+VALUE shoud be number from 0 - 100.
+
+This plugin helps you change transparency quickly.
+
+==============================================================================
+MAPPINGS					*macvim_transparency-mappings*
+
+normal,visual,insert <Plug>(macvim-transparency-inc)
+normal,visual,insert <Plug>(macvim-transparency-dec)
+normal,visual,insert <Plug>(macvim-transparency-roll)
+
+==============================================================================
+VARIABLES					*macvim_transparency-variables*
+
+g:macvim_transparency_step
+	Default: 20
+	Change Step, this number is incremented(or decremented) from current
+        &transparency value.
+
+
+g:macvim_transparency_roller
+	Default: [0, 50]
+	<Plug>(macvim-transparency-roll) use this |List| to roll transparency.
+
+==============================================================================
+CONFIGURATION EXAMPLE				*macvim_transparency-examples*
+>
+  let g:macvim_transparency_step = 10
+  let g:macvim_transparency_roller = [0, 50, 100]
+
+  " transparent
+  nmap <D-Up>   <Plug>(macvim-transparency-inc)
+  " opaque
+  nmap <D-Down> <Plug>(macvim-transparency-dec)
+  " roll from 
+  nmap <F10>    <Plug>(macvim-transparency-roll)
+
+  imap <D-Up>   <Plug>(macvim-transparency-inc)
+  imap <D-Down> <Plug>(macvim-transparency-dec)
+  imap <F10>    <Plug>(macvim-transparency-roll)
+
+  xmap <D-Up>   <Plug>(macvim-transparency-inc)
+  xmap <D-Down> <Plug>(macvim-transparency-dec)
+  xmap <F10>    <Plug>(macvim-transparency-roll)
+<
+==============================================================================
+CHANGELOG					*macvim_transparency-changelog*
+2013-09-21  v1.0
+        - initial release
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
