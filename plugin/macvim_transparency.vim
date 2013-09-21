@@ -15,13 +15,13 @@ let s:default_settings = {
       \ "g:macvim_transparency_roller": [0, 50],
       \ }
 
-function! s:set_default(dict)
+function! s:set_default(dict) "{{{
   for [var,val] in items(a:dict)
     " echo [var, val]
     if !exists(var) | let {var} = val | endif
     unlet! val
   endfor
-endfunction
+endfunction "}}}
 
 call s:set_default(s:default_settings)
 "}}}
@@ -44,4 +44,3 @@ inoremap <Plug>(macvim-transparency-roll) <C-o>:call macvim_transparency#roll()<
 let &cpo = s:old_cpo
 "}}}
 " vim: set fdm=marker:
-
