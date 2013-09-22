@@ -1,7 +1,7 @@
 " GUARD: {{{
 "============================================================
 if exists('g:loaded_macvim_transparency')
-  " finish
+  finish
 endif
 let g:loaded_macvim_transparency = 1
 
