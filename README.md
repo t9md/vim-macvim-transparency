@@ -4,7 +4,10 @@ vim-macvim-transparency
 Change MacVim's window transparency throgh keymap.
 To use transparency, **enable 'CoreText’ rendering** feature on configuration preference.
 
+## Anime
 ![Movie](https://github.com/t9md/t9md/blob/master/img/vim-macvim-transparency.gif?raw=true)
+
+## Help
 [See Help](https://github.com/t9md/vim-macvim-transparency/blob/master/doc/macvim_transparency.txt)
 
 ## config example
