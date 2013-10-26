@@ -30,13 +30,13 @@ normal,visual,insert <Plug>(macvim-transparency-roll)
 ==============================================================================
 VARIABLES					*macvim_transparency-variables*
 
-g:macvim_transparency_step
+*g:macvim_transparency_step*
 	Default: 20
 	Change Step, this number is incremented(or decremented) from current
         &transparency value.
 
 
-g:macvim_transparency_roller
+*g:macvim_transparency_roller*
 	Default: [0, 50]
 	<Plug>(macvim-transparency-roll) use this |List| to roll transparency.
 
